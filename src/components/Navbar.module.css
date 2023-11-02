@@ -1,0 +1,126 @@
+.desktopOnly{
+    display:none;
+    position:absolute;
+}
+
+.flexAround{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.header {
+    background: linear-gradient(#82D9E3,#A7E7CD);
+    color:white;
+}
+
+.headerSearch{
+    width:95%;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+.buttonHeaderChild {
+    margin:0;
+}
+
+@media (width > 572px){    
+    .desktopOnly {
+        display:initial;
+        position:relative;
+    }
+
+    .mobileOnly {
+        display:none;
+        position:absolute;
+    }
+
+    .header {
+        background:none;
+    }
+
+    .itemMenu{
+        background-color: transparent;
+        border: 1px solid transparent;
+        display: block;
+        cursor:pointer;
+        box-sizing: border-box;
+        font-size:0.9em;
+        color:white;
+        height:90%;
+    }
+
+    .itemMenu h3 {
+        font-weight:500;
+        line-height: inherit;
+    }
+
+    .itemMenu:hover{
+        border:1px solid white;
+    }
+
+    .topBar{
+        background-color: #131921;
+        height:70px;
+    }
+
+    .searchArea{
+        height:auto !important;
+        display:flex;
+        width:55%;
+        padding:0 10px;
+    }
+
+    .searchArea > * {
+        margin:0;
+    }
+
+    .headerSelect{
+        display:inline;
+        border-radius : 5px 0 0 5px;
+        border:none;
+        background-color: #D4D4D4;
+        color: rgba(15,15,15,0.8);
+        font-size:0.75em;
+        padding:3px;
+        border-right:5px solid transparent;
+        cursor:pointer;
+    }
+
+    .headerSelectOption{
+        background-color: white;
+        font-size:1.5em;
+    }
+
+    .headerSearch{
+        width:80%;
+        border-width:0;
+    }
+
+    .cartButton {
+        display:flex;
+        align-items:baseline;
+    }
+
+    .cart {
+        width:45px;
+    }
+
+    .cartQuantity {
+        position: absolute;
+        top: 14px;
+        left: 27px;
+    }
+
+    .headerNav{
+        background-color: #232F3E;
+        height:50px;
+    }
+
+    a.itemMenu{
+        text-decoration: none;
+        display:flex;
+        align-items:center;
+        padding:0 15px;
+    }
+}
